@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<script type="text/javascript">
+ var mensaje = "Hola Mundo, soy una cadena de texto!";
+var palabras = mensaje.split(" ");
+// palabras = ["Hola", "Mundo,", "soy", "una", "cadena", "de", "texto!"];
+alert(palabras[6]);  
+var longitud= palabras.length;
+document.write("<table border=1>" + 
+    "<tr><th>palabras</th></tr>");
+for ( i=0; i<longitud  ; i++) {  
+    alert("palabra " + i + " " + palabras[i]);
+    document.write("<tr><td>" + " palabra " + 
+        "en posicion " + i + " del array es:" + 
+        "<b>" + palabras[i] + "</b> </td></tr>" );
+}
+document.write("</table>");
+
+</script>
+
+<body>
+
+
+
+
+</body>
+
+</html>

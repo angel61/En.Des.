@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+//DeclaraciÃ³n de variables
+     
+      
+      //numero de filas por pantalla
+      var numfilas = prompt("Dame el numero de filas");
+      //document.write  PERMITE ESCRIBIR DENTRO DEL BODY
+      //ES UNA FUNCION DE JAVASCRIPT PENSADA PARA 
+      //ESCRIBIR WEBS DE MANERA DINÁMICA
+      for (var i=0;i<numfilas ; i++) {
+       document.write("Vuelta " + i +"<BR>"); 
+      }
+     
+      document.write("<TABLE border='2'>  ");
+      for(var i=0; i<numfilas;i++) {
+        
+        document.write("<TR> <TD>" + " vuelta " + i + "</TD>" +
+                       "<TD> vuelta " + i + "</TD></TR>");
+        
+      }
+      document.write("</TABLE> ");
+      
+  </script>
+  </head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

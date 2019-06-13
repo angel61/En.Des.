@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemploformulariocompleto</title>
+    <script>
+      function capturar()
+    {
+        var resultado= document.getElementById("resultado");
+        var nombre=document.getElementById("nombre");
+        var acuerdo = document.getElementsByName("acuerdo");
+        var seleccion =document.getElementById("seleccion");
+        //Campo nombre
+        var HTML="<br>Nombre: " + nombre.value;
+      
+        // Recorremos todos los valores del radio button para encontrar el
+        // seleccionado
+        for(var i=0;i<acuerdo.length;i++)
+        {
+            if(acuerdo[i].checked)
+                HTML=HTML+"<br>Contrato; " +acuerdo[i].value;
+        }
+
+        //Seleccion de la select
+        var indiceseleccionado=seleccion.selectedIndex;
+        alert(indiceseleccionado);
+        var valorseleccion=seleccion.options[indiceseleccionado].value;
+        HTML= HTML + "<br>Seleccion :" + valorseleccion;
+        resultado.innerHTML=HTML;
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Obtener el valor de un radio button</h1>
+    <form id="form1" action="formulariocompletophp.php" method="POST"> <p>Nombre:
+      <input name="nombre" value="Ambrosio" id="nombre" class="formulario" type="text">
+    </p>
+   
+        Acepto el contrato: <br/>
+      Deacuerdo: Si<input name="acuerdosi" id="acuerdosi" value="si" type="radio"> No<input
+
+          name="acuerdono" id="acuerdono" value="no" type="radio">
+      <br/>
+        <select name="seleccion" id="seleccion" class="formulario_select">
+          <option value="primera">primera</option>
+          <option value="segunda">segunda</option>
+        </select>
+      <br/>
+      <input value="Que valores hay en el formulario" onclick="capturar()" type="button">
+      <input value="Enviar a PHP"  type="submit">
+    </form>
+
+    <div id="resultado"></div>
+  </body>
+</html>
+

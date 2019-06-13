@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+  function longitudcadena(cadena) {
+    var resultado= cadena.length;
+    return resultado;
+  } 
+  
+  
+
+  function caracterencadena(cadena,caracter) {
+    var resultado=false;
+    
+    var indice = cadena.indexOf(caracter);
+    //Indice es la posicion que ocupa el caracter
+    //en la cadena. Si es mayor o igual que cero
+    //el caracter está en la cadena
+    if (indice>=0) {
+        //El caracter está en la cadena
+      resultado=true;
+    }else {
+        //Si indice es -1 el caracter
+        //No está en la cadena
+      resultado=false;
+    }
+    return resultado;
+
+  }
+    
+var cadenapant=prompt("Dame una cadena:");
+var caracterpant=prompt("Dame un caracter");
+var long= longitudcadena(cadenapant);
+alert("longitud de la cadena:" + long);
+var estacaracter=caracterencadena(cadenapant,caracterpant);
+
+if (estacaracter) {
+
+  alert("el caracter "+caracterpant + 
+  " está en la cadena " + cadenapant );
+} else {
+
+  alert("el caracter "+caracterpant + 
+  " no está en la cadena " + cadenapant );
+}
+
+
+
+
+
+ </script>
+  <body>
+  
+  </body>
+</html>

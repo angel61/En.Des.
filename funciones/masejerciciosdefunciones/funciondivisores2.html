@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+    function divisores(numero) {
+    var resto=0;
+    var HTML="<TABLE border=2>"+
+    "<TR><TH>Número:"+numero+"</TH></TR>"+
+    "<TR><TH>Divisores</TH></TR>";
+    for(var i=0; i<=numero;i++) {
+        // por ejemplo el 4 es divisible por 2 porque 
+        //el resto de la division es cero
+        // comprobamos que i es divisor
+        resto=numero%i;
+        // si el resto que está en resto es cero
+        // i es divisor de numero
+        if (resto==0) {
+            //i es divisor de número
+            alert(i+ " es divisor de: " +numero);
+            HTML=HTML+"<TR><TD>"+i+"</TD></TR>";
+        }
+    }
+        HTML=HTML+"</TABLE>";
+        document.write(HTML);
+    }
+
+    divisores(10);
+    var num=parseInt(prompt("Dame un numero"));
+    divisores(num);
+    </script>
+  <body>
+  
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title></title>
+  </head>
+  <script type="text/javascript">
+    function ejemploTag(){
+          var parrafos = 
+          document.getElementsByTagName("p");    
+        var primerParrafo = parrafos[0];
+      alert(parrafos[0].innerHTML);       
+        for(var i=0; i<parrafos.length; i++) {
+              var parrafo = parrafos[i];
+              parrafo.innerHTML="<H3><BR>parrafo "+
+                i+ " modificado <BR></H3>"
+        }	
+    }    
+     </script>
+  
+  <body onload="ejemploTag()">
+        <p><br>
+        Parrafo 1
+        </p>
+        <p><br>
+        Parrafo 2
+        </p>
+        <p><br>
+        Parrafo 3
+        </p>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  
+  <script type="text/javascript">
+// Ejemplo de estructura alternativa múltiple
+// (Anidada dentro de una alternativa doble).
+var Nota, Calificacion = "";
+Nota = parseInt(prompt("Introduce la nota del alumno:", 0));
+Nota = Math.round(Nota); // redondea la nota a un entero
+if (Nota >= 0 && Nota <= 10)
+{
+switch(Nota)
+{case 5:
+Calificacion = "Suficiente";
+break;
+case 6:
+Calificacion = "Bien";
+break;
+case 7:
+case 8:
+Calificacion = "Notable";
+break;
+case 9:
+case 10:
+Calificacion = "Sobresaliente";
+break;
+default:
+Calificacion = "Suspenso";
+};
+}
+else
+{
+Calificacion = "Nota errónea";
+}
+    
+alert("La calificación es "+Calificacion);
+  </script>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

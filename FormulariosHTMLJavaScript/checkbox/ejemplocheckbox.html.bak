@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemploformulariocompleto</title>
+    <script>
+      function capturar()
+    {
+        var resultado="ninguno";
+ 			   //Acepto el contrato
+        var acepto=document.getElementById("acepto");
+      //No Acepto el contrato
+      
+         var noacepto=document.getElementById("noacepto");
+      //Comprobamos que el checkbox noacepto está checkeado
+     if (acepto.checked) {
+      alert("Acepto el contrato"); 
+      alert ("valor de checkbox no acepto" +acepto.value);
+       
+     }
+     //comprobamos que el checkbox noacepto está checkeado
+     if (noacepto.checked) {
+      alert("No Acepto el contrato"); 
+      alert ("valor de checkbox no acepto" + noacepto.value);
+     }
+ 		
+     if (!acepto.checked) {
+        //hace click en acepto
+     noacepto.click()
+      
+      }    
+        
+     if (!noacepto.checked) {
+       
+       //hace click en no acepto
+     acepto.click()
+      
+      }  
+            
+        document.getElementById("resultado").innerHTML=" \
+            Por Nombre: "+resultado;
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Obtener el valor de un radio button</h1>
+    <form id="form1"> Nombre:<br>
+      <p><input name="acepto" id="acepto" class="formulario_check" type="checkbox" checked>
+        Acepto el contrato</p>
+      <p><input name="noacepto" id="noacepto" class="formulario_check" type="checkbox">
+       No Acepto el contrato</p>
+      <p>Deacuerdo: Si<input name="deacuerdo" value="si" type="radio"> No<input
+
+          name="deacuerdo" value="no" type="radio"></p>
+      <p>
+     </p>
+    </form>
+    <input value="Que valor hay en los checkbox" onclick="capturar()" type="button">
+    <div id="resultado"></div>
+  </body>
+</html>

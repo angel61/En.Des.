@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+     
+var visible = true;
+var variablefalsa=false;
+      alert(!visible); // Muestra "false" y no "true"
+
+ alert("La variablefalsa tiene valor false."+ 
+       "Aplicamos negacion !variablefalsa:" +
+       !variablefalsa);
+ 
+ //  	vamos a probar que el valor cero es false  
+      
+var cantidad = 0;           
+      
+vacio = !cantidad; // vacio = true
+  alert("el cero siempre es falso en javascript " + !vacio);   
+      
+cantidad = 2;
+vacio = !cantidad; // vacio = false
+ alert("cualquier otro numero es verdadero en " + 
+       "javascript"  + !vacio);   
+   
+      
+ var mensaje = "";
+mensajeVacio = !mensaje; // mensajeVacio = true
+  alert("La cadena vacia siempre es falso en javascript "
+        + !mensajeVacio);   
+
+      
+      mensaje = "Bienvenido";
+mensajeVacio = !mensaje; // mensajeVacio = false     
+      
+    alert("cualquier otra cadena es verdadero en " + 
+       "javascript"  + !mensajeVacio);   
+   
+       
+     
+  </script>
+  </head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

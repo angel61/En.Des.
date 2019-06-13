@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/
+xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <title>El primer script</title>
+    <script type="text/javascript">
+//Declaración de variables
+
+var edad = parseInt(prompt("Escriba su edad por pantalla"));
+
+
+  
+//Comprobar adolescentes . Un adolescente es alguien
+//Entre 13 y 19 a�os de edad
+ //Compruebe si es un bebe entre 0 y 2 a�os
+      
+ // Compruebe si es ni�o entre 2 y 13 a�os
+ // Compruebe si es una persona madura mas de 45 a�os y 65 a�os
+ // Compruebe si es Jubilado 65 o m�s
+
+if(edad>=13 && edad<=19) {
+alert("Eres adolescente");
+}
+else {
+alert("No eres adolescente");
+}
+      
+      
+if(edad >= 18) {
+alert("Eres mayor de edad");
+}
+else {
+alert("Todav�a eres menor de edad");
+}      
+      
+//      
+      
+//CADENA VACIA , UNA CADENA QUE NO TIENE NADA
+//COMO UN CAMPO DE TEXTO VACIO
+var nombre = "";
+      
+nombre = prompt("Escribe tu nombre");
+if(nombre == "") {
+alert("A�n no nos has dicho tu nombre");
+}
+else {
+alert("Hemos guardado tu nombre");
+edad=edad +1;
+}      
+      
+</script> </head>
+  <body>
+    <p>Esta pagina contiene el primer script</p>
+  </body>
+</html>

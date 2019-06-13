@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemploSelect valoracion con PHP</title>
+  </head>
+ 
+    <script type="text/javascript">
+function dimePropiedades(){ 
+  var texto;
+    var miSelect=document.getElementById("miSelect");
+    //longitud
+   	texto = "El numero de opciones del select: " + miSelect.options.length ;
+   	//devuelve el indice de la opción seleccionada
+    var indice = miSelect.selectedIndex ;
+   	texto += "nIndice de la opcion escogida: " + indice ;
+    // el valor de la opción
+   	var valor = miSelect.options[indice].value ;
+   	texto += "nValor de la opcion escogida: " + valor ;
+  //el texto de la opción
+   	var textoEscogido = miSelect.options[indice].text ;
+   	texto += "nTexto de la opcion escogida: " + textoEscogido ;
+   	alert(texto); }
+      
+   </script>
+  <body>
+ <form name="formul" action="selectvaloracion.php" method="POST"> Valoración sobre este web:
+      <select name="miSelect">
+        <option value="Muy Bien">Muy bien </option>
+        <option value="Regular" selected="selected">Regular </option>
+        <option value="Muy mal">Muy mal </option>
+      </select>
+      <br>
+      <br>
+      <input value="Dime propiedades" onclick="dimePropiedades()" type="button">
+      <input value="Mandar a PHP" type="submit">
+    </form>
+  </body>
+</html>

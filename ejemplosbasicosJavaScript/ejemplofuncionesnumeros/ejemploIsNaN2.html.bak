@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+      // Cogemos el número por pantall
+      var numerocadena= prompt("Dame un número por pantalla");
+      //Después calculamos el resto de dividir por dos
+      //Porque si el resto es cero el número es par
+      //Si el resto es uno el número es impar
+      
+      //trasformamos el número a Entero con parseInt
+      var numero=parseInt(numerocadena);
+      var resto= numero%2;
+      //Si el resto es cero el numero es par
+      
+      //Uso isNaN para ver si no es numero
+      // isNaN -> is not a number
+      //devuelve 
+      if (isNaN(numero)) {
+     		//IsNaN es verdadero no es un número
+        alert("No has escrito un número");
+        
+      	
+      } else {
+        //Si es un numero IsNaN es false y 
+        //compruebo si es par o inpar
+         if (resto== 0) {
+        
+       		 alert("El numero es par");
+        
+     		 } else {
+        //Si el resto es 1 el numero es impar
+        alert("El numero es impar");
+         }
+      }
+        
+      
+      
+
+  </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

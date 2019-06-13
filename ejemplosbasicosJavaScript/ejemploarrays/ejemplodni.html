@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+
+     
+//array de letras      
+      var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
+'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+     var dni=parseInt(prompt("Indicame un número de DNI"));
+     //Saco el resto de dividir por 23 -> division módulo
+     var indice=dni%23;
+     //Accedo a la posicion del array que me da el indice para
+     //sacar la letra
+     var letra= letras[indice];
+     
+     alert("El dni es " + dni +" la letra es " + letra +". Dni completo: " + dni +"-"+ letra); 
+     
+      
+      
+  </script>
+  </head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

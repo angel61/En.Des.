@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>tabla de multiplicar</title>
+    <script>
+      function tablamultiplicar()
+    {	
+    var divresultado = document.getElementById("resultado");
+    var num1 =parseInt(prompt("Dame un numero"));
+    var HTML="<TABLE border=2><TR><TH>Número</TH><TH>Resultado</TH></TR>";
+    for (var i=1; i<=10; i++) {
+        HTML=HTML+"<TR><TD>"+ num1 +"X"+i+"=</TD>"+
+        "<TD>"+ i*num1 +"</TD></TR>";
+    }
+    HTML=HTML+"</TABLE>";
+    divresultado.innerHTML= HTML;
+    }
+    </script>
+  </head>
+  <body onload="tablamultiplicar()">
+    <h1>tabla de multiplicar div</h1>
+    <div id="resultado"></div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title></title>
+  </head>
+  <script type="text/javascript">
+    function ejemploName(){
+    var parrafos = document.getElementsByName("parrafo"); 
+    var primerParrafo = parrafos[0];
+    for(var i=0; i<parrafos.length; i++) {
+    var parrafo = parrafos[i];
+    parrafo.innerHTML="<H2>Parrafo " + "Modificado</H2>";
+    }   
+    } 
+    </script>
+    
+    <body onload="ejemploName()">
+  
+  
+   
+            <p name="parrafo"><br>
+            Parrafo 1
+            </p>
+            <p><br>
+            Parrafo 2
+            </p>
+            <p name="parrafo" ><br>
+            Parrafo 3
+            </p>
+            </body>
+            
+</html>

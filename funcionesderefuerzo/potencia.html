@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title></title>
+    <script type="text/javascript">      
+    
+    
+
+      
+function potencia(numero,exponente) {
+
+var resultado=1;
+var HTML="";
+
+for(i=1; i<=exponente;i++) {
+
+resultado=resultado*numero;
+
+}
+alert("la potencia de "+numero+ 
+"elevado a exponente " + exponente +
+" es " +resultado);
+
+
+HTML="<TABLE border=2><TR><TH>Numero</TH>"+
+"<TH>Exponente</TH><TH>Resultado Potencia</TH></TR>"+
+    "<TR><TD>"+numero+"</TD><TD>"+
+      exponente+"</TD><TD>"
+      + resultado+"</TD></TR></TABLE>";
+document.write(HTML);
+}
+
+potencia(5,4);
+var nume=parseInt(prompt("Dame un numero"));
+var expo=parseInt(prompt("Dame un exponente"));
+potencia(nume,expo);
+                
+
+    
+    
+    
+</script></head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

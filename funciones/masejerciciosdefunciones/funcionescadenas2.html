@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+    function concatenaymayusculas(cadena1,cadena2)  {
+      
+        var concatena= cadena1+cadena2;
+        var resultado=concatena.toUpperCase();
+        return resultado;
+    }
+    //PASO CADENAS FIJAS
+    var resul= concatenaymayusculas("cade1","cade2");
+    // DEVUELVE CADE1CADE2
+    alert(resul);
+
+    //PASO CADENAS RECOGIDAS POR PANTALLA
+    // AHORA COGEMOS POR PANTALLA LAS CADENAS
+    var cad1=prompt("Dame una cadena");
+    var cad2=prompt("Dame otra cadena:");
+    //Y SE LAS PASAMOS A LA FUNCION
+    var result= concatenaymayusculas(cad1,cad2);
+    
+    
+    
+    document.write("<h3>la cadena1 "+ cad1 + " La cadena2 " + cad2 
+        + " dan como resultado " + result+"</h3>");
+
+    
+ </script>
+  <body>
+  
+  </body>
+</html>

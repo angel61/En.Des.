@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <script>
+ 
+
+    
+var numero = prompt("Dame un número");
+//Transforma a entero
+var entero= parseInt(numero);
+//transforma a decimal
+var decimal = parseFloat(numero);
+alert("Entero:" + entero);
+alert("Decimal:" + decimal);
+    
+alert("Entero:" + entero +"\n" +
+      "Decimal:" + decimal);
+
+//Numero dos decimales
+alert("Numero con dos decimales:" + decimal.toFixed(2));
+
+//Para quedarte con solo la parte decimal
+var solodecimales= decimal-entero;
+alert("Quedarte solo con los decimales " + solodecimales);
+
+
+ 
+ 
+    
+
+  
+  </script>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

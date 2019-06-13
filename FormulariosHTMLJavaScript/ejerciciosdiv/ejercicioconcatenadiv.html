@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejercicio concatenar div</title>
+    <script>
+      function concatena()
+    {	
+    var divresultado = document.getElementById("resultado");
+    var cadena1 =prompt("Dame una cadena");
+    var cadena2 =prompt("Dame otra cadena");
+    divresultado.innerHTML=" <H3>resultado: "+cadena1+cadena2 +"</H3>";
+    }
+    </script>
+  </head>
+  <body onload="concatena()">
+    <h1>concatenar dos cadenas en div</h1>
+    <div id="resultado"></div>
+  </body>
+</html>

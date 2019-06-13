@@ -1,0 +1,32 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+   <script type="text/javascript">
+
+   function devuelvetresprimcuatroult(String Cadena) {
+    var longitud= Cadena.length;
+    if (longitud>7){
+        var tresprimeros= Cadena.subString(0,2);
+        var cuatroultimos=Cadena.subString(longitud-5,longitud-1);
+        return (tresprimeros+cuatroultimos);
+
+   }
+
+
+   var cadenapantalla=prompt("Dame una cadena ");
+   alert(cadenapantalla);
+   var cadenafuncion=devuelvetresprimcuatroult(cadenapantalla);
+   alert(cadenafuncion);
+   
+
+
+</script>
+  
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

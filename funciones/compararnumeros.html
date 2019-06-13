@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title></title>
+    <script type="text/javascript">      
+    
+//Nos devuelve el indice de la ultima posición pasada como parámetro
+    
+
+      
+function compararnumeros(numero1,numero2) {
+var resultado=false;
+
+if (numero1==numero2) {
+    resultado=true;
+} else {
+    resultado=false;
+
+}
+   return resultado;
+}
+var numero1=parseInt(prompt("Dame el primer numero"));
+var numero2=parseInt(prompt("Dame el segundo numero"));
+var resultado=compararnumeros(numero1,numero2);
+   alert("La variable resultado tiene de valor " +resultado);               
+
+ if (resultado) {
+alert (numero1+" y " + numero2 + " son iguales");
+
+} else {
+    alert (numero1+" y " + numero2 + " son distintos");
+
+}  
+    
+var condicion= (2<3);
+alert("Valor de Condicion " + condicion);
+if (2<3) {
+
+    alert ("Entra en el if");
+
+}
+if (condicion) {
+
+    alert ("Entra en el if");
+
+}
+
+
+</script></head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

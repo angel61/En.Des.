@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+    function sumanumeros(numero) {
+      var resultado=0;
+      //suma los numeros de 0 hasta numero
+      // si numero es 5 vamos a sumar
+      // resultado=0+1+2+3+4+5 
+      for(var i=0;i<=numero;i++) {
+        
+        resultado=resultado+i;
+        //Sirve para probar el bucle paso a paso
+        alert("valor de i:" + i+ " valor de resultado:"
+        +resultado );
+
+      }
+      //Cuando termino las sumas salgo del for
+      //y devuelvo el resultado
+      return resultado;
+
+    }
+    var resul=sumanumeros(7);
+    alert("La suma de los número hasta el 7 es:" + resul);
+
+    var num=parseInt(prompt("Dame el numero:"));
+    var resul=sumanumeros(num);
+   
+
+
+
+    var resultsuma=sumanumeros(num);
+    num=8
+    var HTML= "<TABLE border=2> " +
+      "<TR><TH>Número</TH><TH>Suma</TH></TR>" +
+    "<TR><TD>"+num+"</TD><TD>"+resultsuma +"</TD></TR></TABLE>";
+    
+    
+    document.write(HTML);
+
+    
+
+
+    
+ </script>
+  <body>
+  
+  </body>
+</html>

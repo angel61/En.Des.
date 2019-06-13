@@ -1,0 +1,78 @@
+
+<html>
+<head> <title>Ejercicio 2. Formularios</title> </head>
+
+<body>
+
+<h1 align="center">DATOS DE ALUMNOS- CONTINUACIÓN</h1>
+
+<table align="center" border="2" cellpadding="20" bgcolor="pink"> 
+<tr><td>
+    
+    <h3 align="center"><font color="red">Teclea más datos.</font></h3>
+    <FORM>
+    <h4>Teclea fecha de nacimiento: </h4>
+    <p><font color=blue>
+      Teclea día de nacimiento..: <INPUT TYPE="text" size=8 NAME="dia">
+      Selecciona mes de nacimiento..: 
+      <select name="semana">
+        <option value="Enero">Enero
+        <option value="Febrero">Febrero
+        <option value="Marzo">Marzo
+        <option value="Abril">Abril
+        <option value="Mayo">Mayo
+        <option value="Junio">Junio
+        <option value="Julio">Julio
+       <option value="Agosto">Agosto
+       <option value="Septiembre">Septiembre
+       <option value="Octubre">Octubre
+       <option value="Noviembre">Noviembre
+       <option value="Diciembre">Diciembre
+      </select>
+     Teclea a�o de nacimiento..: <INPUT TYPE="text" size=8 NAME="anio">
+    </font></P>
+    
+    <p><font color=blue>
+      Selecciona El curso..: 
+      <select name="curso">
+        <option value="SMR1">Primero SMR
+        <option value="SMR2">Segundo SMR 
+        <option value="DAM1">Primero DAM
+        <option value="DAM2">Segundo DAM
+        <option value="ASIR1">Primero ASIR
+        <option value="ASIR2">Segundo ASIR
+      </select>
+    </font></P>
+    <P><font color=blue>
+      <hr> Elige 3 materias optativas
+      <INPUT TYPE="checkbox" NAME="Ingles">Inglés
+      <INPUT TYPE="checkbox" NAME="Frances">Francés
+      <INPUT TYPE="checkbox" NAME="Deporte">Deporte
+      <INPUT TYPE="checkbox" NAME="Astronomia">Astronomia
+      <INPUT TYPE="checkbox" NAME="Historia">Historia 
+      <INPUT TYPE="checkbox" NAME="Web">Páginas web 
+      <INPUT TYPE="checkbox" NAME="Redes">Redes  
+      <hr>
+    </font></P>
+    <P> <font color=blue>Selecciona el turno: 
+         <INPUT TYPE="radio" NAME="Diurno" VALUE="Diurno">Diurno
+         <INPUT TYPE="radio" NAME="Nocturno" VALUE="Nocturno">Nocturno
+        <INPUT TYPE="radio" NAME="Vespertino" VALUE="Vespertino">Vespertino
+    </font></P>
+
+
+    <hr>
+    
+    <p align=center><INPUT TYPE="submit" VALUE=" Enviar datos " NAME="enviar"> 
+       <INPUT TYPE="reset" VALUE=" Limpiar datos " NAME="limpiar">
+       <INPUT TYPE="button" VALUE=" Cerrar ventana " onClick="window.close();">
+       <INPUT TYPE="button"  VALUE="Anterior formulario" onClick="window.open ('Ejercicio1_form.html');">
+    </p>
+
+    </FORM>
+
+</td></tr></table>
+
+
+</body>
+</html>      

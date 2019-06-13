@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+    function paroimpar(numero) {
+    var resultado="";
+    //Si el resto es cero el numero es par
+    if (numero%2==0) {
+        resultado="par";
+    } else {
+        resultado="impar";
+    } 
+       return resultado;
+    }
+    var num=parseInt(prompt("Dame un número"));
+    var resul=paroimpar(num);
+    alert(resul);
+    document.write("<h3> el numero " + num + "es " 
+         + resul + "</h3>" );
+
+ </script>
+  <body>
+  
+  </body>
+</html>

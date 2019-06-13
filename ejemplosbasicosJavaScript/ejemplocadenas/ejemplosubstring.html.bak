@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemplosubstring</title>
+    <script type="text/javascript">
+// Ejemplo cadenas transparancia66
+var mensaje = "Hola Mundo";
+var porcion = mensaje.substring(2); // porcion = "la Mundo"
+alert(porcion);
+
+porcion = mensaje.substring(5); // porcion = "Mundo"
+alert(porcion);      
+
+porcion = mensaje.substring(7); // porcion = "ndo"
+alert(porcion);    
+        
+        
+  </script>
+  </head>
+  <body> 
+    <p><br>
+    </p>
+  </body>
+</html>

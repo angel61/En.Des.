@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title>funcion máximo</title>
+  </head>
+    <script type="text/javascript">
+function cadenamayor(cad1, cad2) {
+var resultado="";
+var long1=cad1.length;
+var long2=cad2.length;
+
+if (long1>long2) {
+  resultado=cad1;
+} else {
+  resultado=cad2;
+}
+  return resultado;
+}    
+var cadena1=prompt("Dame una cadena");
+var cadena2=prompt("Dame otra cadena");
+var resul=cadenamayor(cadena1,cadena2);
+alert(resul);
+var HTML="<TABLE border=1><TR><TH>Variable</TH><TH>Valor</TH></TR>"+
+        "<TR><TD>Cadena 1</TD><TD>"+cadena1+"</TD></TR>"+
+        "<TR><TD>Cadena 2</TD><TD>"+cadena2+"</TD></TR>"+
+        "<TR><TD>Cadena mayor</TD><TD>"+resul+"</TD></TR>"+
+        "</TABLE>";
+
+document.write(HTML);
+
+
+
+  
+</script>
+  <body>
+  
+  </body>
+</html>

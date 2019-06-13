@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ejemplo de radiobutton colores</title>
+    <script> 
+function cambiaColor(){ 
+   	var i;
+    seleccionado=0;
+    var colorin=document.getElementsByName("colorin");
+
+    //recorro el array de radiobuton
+   	for (i=0;i<colorin.length;i++){ 
+      //cuando encuentro el que está activo salgo del bucle
+      	if (colorin[i].checked) 
+         	seleccionado=i; 
+   	} 
+  alert(colorin[seleccionado].value);
+  //cambio el color del document que es el body 
+  document.bgColor = colorin[seleccionado].value 
+} 
+</script></head>
+  <body>
+    <form name="fcolores" action="radiobuttoncolores.php" method="POST"> 
+      <input name="colorin" value="ffffff" checked="checked" type="Radio"> Blanco <br>
+      <input name="colorin" value="ff0000" type="Radio"> Rojo <br>
+      <input name="colorin" value="00ff00" type="Radio"> Verde <br>
+      <input name="colorin" value="0000ff" type="Radio"> Azul <br>
+      <input name="colorin" value="ffff00" type="Radio"> Amarillo <br>
+      <br>
+      <input name="color" value="Cambia Color" onclick="cambiaColor()" type="Button">
+      <input name="php" value="Cambia Color PHP"  type="submit">
+    </form>
+    
+  </body>
+</html>

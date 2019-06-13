@@ -1,0 +1,40 @@
+
+<html>
+<head> <title>Ejercicio 1. Formularios</title> </head>
+
+<body>
+
+<h1 align="center">DATOS DE ALUMNOS</h1>
+
+<table align="center" border="2" cellpadding="20" bgcolor="gold"> 
+<tr><td>
+    
+    <h3 align="center"><font color="red">Teclea datos de entrada.</font></h3>
+    <FORM action="ejercicio1form.php" method="POST">
+    <P><font color=blue>Teclea nombre de alumno..: </font><INPUT TYPE="text" NAME="nombre" id="nombre"></font></P>
+    <P><font color=blue>Teclea numero matrícula..: </font><INPUT TYPE="text" NAME="num" id="num"></P>
+    <P><font color=blue>Teclea dirección.........: </font><INPUT TYPE="text" NAME="dire" id="dire"></P>
+    <P><font color=blue>Teclea población.........: </font><INPUT TYPE="text" NAME="pobla" id="pobla"></P>
+    <P><font color=blue>Teclea teléfono..........: </font><INPUT TYPE="text" NAME="telef" id="telef"></P>
+    <P> <font color=blue>Selecciona el sexo: 
+         <INPUT TYPE="radio" NAME="hombre" id="hombre" VALUE="hombre">Masculino
+         <INPUT TYPE="radio" NAME="mujer" id="mujer" VALUE="mujer">Femenino
+    </font></P>
+    <hr>
+    
+    <p><INPUT TYPE="submit" VALUE=" Enviar datos " NAME="enviar"> 
+       <INPUT TYPE="reset" VALUE=" Limpiar datos " NAME="limpiar">
+       <INPUT TYPE="button" VALUE=" Cerrar ventana " onClick="window.close();">
+       <INPUT TYPE="button"  VALUE="Siguiente formulario" onClick="window.open ('Ejercicio2_form.html');">
+    </p>
+
+    </FORM>
+
+</td></tr></table>
+
+
+</body>
+</html>      
+
+
+

@@ -1,0 +1,73 @@
+
+<html>
+<head> <title>Ejercicio 1. Formularios</title> </head>
+<script>
+    function mostrardatosdiv()
+  {
+    var HTML="";
+   var divresultado= document.getElementById("resultado");
+   var nombre=document.getElementById("num").value;
+   var dire= document.getElementById("dire").value;
+   var pobla=document.getElementById("pobla").value;
+   var telef=document.getElementById("telef").value;
+   var radio=document.getElementsByName("sexo");
+   var longitudradio=radio.length;
+   var sexo="";
+
+   for(var i=0; i<longitudradio ;i++) {
+
+        if (radio[i].checked) {
+
+            sexo=radio[i].value;
+        }
+    }
+   HTML="<TABLE border=2><tr><th>datos</th><th>valor</th></tr>" +
+        "<tr><td>nombre</td>" + "<td>"+nombre+"</td></tr>" +
+        "<tr><td>dirección</td>" + "<td>"+dire+"</td></tr>" +
+        "<tr><td>población</td>" + "<td>"+pobla+"</td></tr>" +
+        "<tr><td>teléfono</td>" + "<td>"+telef+"</td></tr>" +
+        "<tr><td>sexo</td>" + "<td>"+sexo+"</td></tr></table>" ;
+    
+    divresultado.innerHTML=HTML;
+    divresultado.bgcolor="blue";
+
+  }
+
+
+
+ </script>     
+<body>
+
+<h1 align="center">DATOS DE ALUMNOS</h1>
+
+<table align="center" border="2" cellpadding="20" bgcolor="gold"> 
+<tr><td>
+    
+    <h3 align="center"><font color="red">Teclea datos de entrada.</font></h3>
+    <FORM>
+    <P><font color=blue>Teclea nombre de alumno..: </font><INPUT TYPE="text" NAME="nombre" id="nombre"></font></P>
+    <P><font color=blue>Teclea numero matrícula..: </font><INPUT TYPE="text" NAME="num" id="num"></P>
+    <P><font color=blue>Teclea dirección.........: </font><INPUT TYPE="text" NAME="dire" id="dire"></P>
+    <P><font color=blue>Teclea población.........: </font><INPUT TYPE="text" NAME="pobla" id="pobla"></P>
+    <P><font color=blue>Teclea teléfono..........: </font><INPUT TYPE="text" NAME="telef" id="telef"></P>
+    <P> <font color=blue>Selecciona el sexo: 
+         <INPUT TYPE="radio" name="sexo" id="sexo" VALUE="hombre">Masculino
+         <INPUT TYPE="radio" name="sexo" id="sexo" VALUE="mujer">Femenino
+    </font></P>
+    <hr>
+    
+    <p>
+       <INPUT TYPE="button" VALUE=" Cerrar ventana" onClick="window.close();">
+       <INPUT TYPE="button"  VALUE="mostrardatos" onClick="mostrardatosdiv();">
+    </p>
+
+    </FORM>
+    <div id="resultado" bgcolor="green"></div>
+</td></tr></table>
+
+
+</body>
+</html>      
+
+
+

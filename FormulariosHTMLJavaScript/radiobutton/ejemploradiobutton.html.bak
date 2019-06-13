@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ejemplo de radiobutton</title>
+  </head>
+<script> 
+function cambiaColor(){ 
+   	var i 
+   	for (i=0;i<document.fcolores.colorin.length;i++){ 
+      	if (document.fcolores.colorin[i].checked) 
+         	break; 
+   	} 
+  alert(document.fcolores.colorin[i].value);
+   	document.bgColor = document.fcolores.colorin[i].value 
+} 
+</script>
+ <body> 
+<form name=fcolores> 
+<input type="Radio" name="colorin" value="ffffff" checked> Blanco 
+<br> 
+<input type="Radio" name="colorin" value="ff0000"> Rojo 
+<br> 
+<input type="Radio" name="colorin" value="00ff00"> Verde 
+<br> 
+<input type="Radio" name="colorin" value="0000ff"> Azul 
+<br> 
+<input type="Radio" name="colorin" value="ffff00"> Amarillo 
+<br> 
+<br> 
+<input type="Button" name="" value="Cambia Color" onclick="cambiaColor()"> 
+  
+  </form>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ejemplo de radiobutton movil</title>
+    </head>
+    <script text="javascript"> 
+      function ChequearSeleccionado(){ 
+       var i;
+      var seleccionado=0;
+      var moviles=document.getElementsByName("moviles")
+  
+      resultado=document.getElementById("resultado");
+   
+  
+      //recorro el array de radiobuton
+       for (i=0;i<moviles.length;i++){ 
+        //cuando encuentro el que está activo salgo del bucle
+          if (moviles[i].checked) 
+             seleccionado=i; 
+       } 
+    alert(moviles[seleccionado].value);
+    //cambio el color del document que es el body 
+    resultado.innerHTML=" \ Su sistema operativo es " + moviles[seleccionado].value;
+  } 
+  </script>
+  <body>
+    <form name="fmoviles"> 
+
+        <h3>Seleccione su sistema operativo</h3>
+      <input name="moviles" value="Android" checked="checked" type="Radio"> Android <br>
+      <input name="moviles" value="iOS" type="Radio"> iOS <br>
+      <input name="moviles" value="Windows Mobile" type="Radio"> Windows Mobile <br>
+      
+      <br>
+      <input name="" value="Comprobar selección" onclick="ChequearSeleccionado()" type="Button">
+    </form>
+    <br>
+    <div id="resultado"></div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemploSelect</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+function Selecciona(){ 
+
+
+
+   	var texto;
+    //longitud
+    var resultado=document.getElementById("resultado");
+    var selectProv=document.getElementById("selectProvincias");
+   	texto = "<br>El numero de opciones del select: " + selectProv.length ;
+   	//devuelve el indice de la opción seleccionada
+    var indice = selectProv.selectedIndex ;
+   	texto += "<br>Indice de la opcion escogida: " + indice ;
+    // el valor de la opción
+   	var valor = selectProv.options[indice].value ;
+   	texto += "<br>Valor de la opcion escogida: " + valor ;
+  
+   
+   	resultado.innerHTML= texto;
+       
+        }
+      
+   </script>
+    <form name="formul"> Provincia donde vive:
+      <select name="selectProvincias" id="selectProvincias">
+        <option value="Albacete">Albacete </option>
+        <option value="Cuenca" >Cuenca </option>
+        <option value="Guadalajara">Guadalajara </option>
+        <option value="Ciudad Real" ">Ciudad Real </option>
+        <option value="Toledo">Toledo </option>
+      </select>
+      <br>
+      <br>
+      <input value="Selecciona" onclick="Selecciona()" type="button">
+    </form>
+    <div id="resultado"></div>
+  </body>
+</html>

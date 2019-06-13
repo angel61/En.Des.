@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+   <script type="text/javascript">
+     //Cogemos dos numeros por pantalla
+     // Primero comprobamos que los dos son numeros
+     //Con un if
+     // y los multiplicamos
+     //Mostramos el resultado con document.write
+     // tabla
+     // operacion       resultado
+     // 4x5=              20
+     
+     var numero1 = parseInt(prompt("Dame el primer número"));
+     var numero2 = parseInt(prompt("Dame el segundo número"));
+     var resultado=0;
+     //Comprobar que los dos no son números
+     //Con que uno de ellos no sea número no puedo hacer
+     //La multiplicación
+     if (isNaN(numero1) || isNaN(numero2)) {
+       
+       alert("Los valores introducidos no son numéricos");
+       
+     } else {
+       
+       resultado = numero1*numero2;
+       document.write("<TABLE border='1'> <TR align='center'> <TH>Operación </TH>" +
+                      "<TH> Resultado </TH></TR>" +
+                      "<TR align='center'> <TD> " + numero1 + "x" + numero2+
+                      "="+"</TD><TD>" + resultado +"</TD></TR></TABLE>");
+     }
+     
+     
+      //Cogemos dos numeros por pantalla
+     // Primero comprobamos que los dos son numeros y 
+     //numero 2 no es cero
+     //Con un if
+     // y los dividimos
+     //Mostramos el resultado con document.write
+     // tabla
+     // operacion       resultado
+     // 4/5=              20
+     
+      var numero1 = parseInt(prompt("Dame el primer número"));
+     var numero2 = parseInt(prompt("Dame el segundo número"));
+     var resultado=0;
+     //Comprobar que los dos no son números
+     //Con que uno de ellos no sea número no puedo hacer
+     //La multiplicación
+     
+     if (numero2 != 0) {
+       if (isNaN(numero1) || isNaN(numero2)) {
+
+         alert("Los valores introducidos no son numéricos");
+
+       } else {
+				//La división devuelve decimal 
+         resultado = parseFloat(numero1/numero2);
+         document.write("<TABLE border='1'> <TR align='center'> <TH>Operación </TH>" +
+                        "<TH> Resultado </TH></TR>" +
+                        "<TR align='center'> <TD> " + numero1 + "/" + numero2+
+                        "="+"</TD><TD>" + resultado +"</TD></TR></TABLE>");
+       }
+     } else {
+       
+         alert("Numero 2 es igual a 0, no se puede dividir"+
+               " por cero");
+         
+         
+     }
+       
+     
+     
+  </script>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <script>
+ 
+
+    
+var numero = prompt("Dame un número");
+//Transforma a entero
+var entero= parseInt(numero);
+//transforma a decimal
+var decimal = parseFloat(numero);
+alert("Entero:" + entero);
+alert("Decimal:" + decimal);
+
+
+
+ 
+ 
+    
+
+  
+  </script>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

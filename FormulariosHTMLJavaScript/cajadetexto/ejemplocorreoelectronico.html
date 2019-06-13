@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Ejemplo correo electronico</title>
+    
+   </head>
+   <script type="text/javascript">
+// Ejemplo autenticacion
+    function comprobarCampos() {
+      //cogemos el campo de texto Nombre
+      var txtcorreo =document.getElementById("correo");
+      var divresultado=document.getElementById("resultado");       
+      //El valor escrito en pantalla está en value
+      var correo = txtcorreo.value;
+      
+      
+            //Comprobamos que contiene una @ para ver que es un correo electronico 
+      //Con la funcion indexof
+
+      var indice = correo.indexOf("@");
+     
+      
+      //Comprobamos si es distinto de cadena Vacia
+      if(correo!="" && indice>0){
+       alert("el campo correo está rellenado con " + correo);
+       divresultado.innerHTML="Correo electrónico válido: " + correo;
+      } else {
+        alert("el campo nombre está vacio o tiene un formato no válido");
+      }
+     
+      
+    }
+    
+    
+  </script>
+ 
+  <body>
+    <h2>Ejemplo caja de texto correo</h2>
+    <form action="paginadecorrreo.php" method="POST">
+      <p>Introduzca su correo electrónico: <input name="correo" id="correo" type="text">
+      </p>
+     
+      <p><input value="Comprobar Campos" onclick="comprobarCampos()" type="button"> </p>
+    </form>
+    
+  </body>
+  <br/>
+    <div id="resultado"></div>
+</html>

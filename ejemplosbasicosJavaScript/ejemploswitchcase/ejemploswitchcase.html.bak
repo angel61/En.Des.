@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+    
+ var numero =parseInt(prompt("Escribe un numero entre 1 y 4"));   
+    
+ switch (numero)
+{ case 1:
+alert("Ha escrito el 1");
+
+case 2:
+alert("Ha escrito el 2");
+break;
+case 3:
+alert("Ha escrito el 3");
+break;
+case 4:
+alert("Ha escrito el 4");
+break;
+default:
+alert("El numero no esta entre uno y cuatro");
+};
+  
+  </script>
+  </head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

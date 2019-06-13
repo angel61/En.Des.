@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+    function factorial(numero) {
+    var resultado=1;
+
+    for (var i=1; i<=numero; i++) {
+        resultado=resultado*i;
+        alert("valor de i:" + i+ " valor de resultado:"
+        +resultado );
+
+
+    }
+    return resultado;
+
+    }
+
+    var num=parseInt(prompt("Dame el numero:"));
+    var resultfactorial=factorial(num);
+    var HTMLTable= "<TABLE border=1> <TR><TH>Número</TH><TH>Factorial</TH></TR>" +
+                    "<TR><TD>!"+num+"</TD><TD>"+resultfactorial +"</TD></TR></TABLE>";
+    document.write(HTMLTable);
+
+    
+
+
+    
+ </script>
+  <body>
+  
+  </body>
+</html>

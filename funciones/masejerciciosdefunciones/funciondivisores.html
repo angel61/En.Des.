@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+    function divisores(numero) {
+
+
+
+      var HTML="";
+      var i=numero;
+      HTML="<TABLE border=1><TR><TD>Numero:" + numero +"</TD></TR>" +
+        "<TR><TD>Divisores</TD></TR>"
+      while(i>0) {
+
+        if (numero%i==0) {
+            HTML=HTML+"<TR><TD>"+i+"</TD></TR>"
+          
+        }
+        i=i-1;
+
+      }
+      HTML= HTML + "</TABLE>";
+      document.write(HTML);
+    }
+
+    var num= prompt("Dame un número: ");
+    divisores(num);
+    
+ </script>
+  <body>
+  
+  </body>
+</html>

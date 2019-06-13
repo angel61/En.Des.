@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title></title>
+  </head>
+    <script type="text/javascript">      
+    
+    
+
+      
+function nombres() {
+
+var nombre="";
+
+//Abrimos la tabla y ponemos la fila de titulos
+var HTML="<TABLE border=2><TR><TH>Nombre</TH></TR>";
+
+
+
+
+
+
+nombre=prompt("Dame un nombre");
+//pASAMOS NOMBRE A MINUSCULAR CON TOLOWERCAS PARA QUE LO TRANSFORME
+//A MINUSCULAS. MIENTRAS NOMBRE SEA DISTINTO DE NO
+while (nombre.toLowerCase()!="no") {
+      // METEMOS NOMBRES EN LA TABLA
+        HTML=HTML+"<TR><TD>"+nombre+"</TD></TR>";
+        nombre=prompt("Dame otro nombre");
+          }
+
+HTML=HTML+"</TABLE>";
+document.write(HTML);
+}
+
+nombres();
+                
+var resultado=false;
+
+
+if (resultado) {
+
+alert("Se hace el alert");
+}
+    
+    
+    
+</script></head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

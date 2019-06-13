@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+
+var mensaje = "Hola";
+    
+//Coge el carácter de la posición 0
+var letra = mensaje.charAt(0); // letra = H
+alert("posición cero:" + letra);    
+
+//coge el caracter de la posición 2
+letra = mensaje.charAt(2); // letra = l
+alert("posición dos:" + letra); 
+      
+      
+// Mostrar la letra a de esta varible mensaje
+      
+      //coge el caracter de la posición 2
+letra = mensaje.charAt(3); // letra = a
+alert("posición tres:" + letra); 
+    
+//Nos devuelve el primer indice de la cadena pasada como parámetro
+var mensaje = "Hola";
+var posicion = mensaje.indexOf('a'); // posicion = 3
+
+alert("posición de a:" + posicion);
+    
+posicion = mensaje.indexOf('b'); // posicion = -1
+    
+alert("posición de b:" + posicion);
+      
+ // Vamos a hacer una sopa de letras
+ // vamos a comprobar si el caracter que escribimos por pantalla
+ // está en la variable cadena
+      
+ //Cadena a comparar
+ var cadena="que va a ser una cadena muy larga";
+
+ //Valor cogido por pantalla     
+ var textopantalla= prompt("Dame un caracter por pantalla"); 
+ //Para asegurarnos que sólo cogemos un caracter hago charAt(0)
+ var caracterpantalla = textopantalla.charAt(0);
+ //buscando la posicion del caracter cogido por pantalla en la cadena
+ var posicion = cadena.indexOf(caracterpantalla);
+ 
+ //Si la posicion es mayor o igual que cero, significa que
+ //el carácter está en la cadena, sino posición es -1
+ if (posicion>=0) {
+   
+   alert("El Caracter "+ caracterpantalla+" está en la cadena");
+   
+ } else {
+   
+   alert("El Caracter "+ caracterpantalla+" no está en la cadena"); 
+ }
+      
+    
+//Nos devuelve el indice de la ultima posición pasada como parámetro
+    
+var mensaje = "Hola cometa balon";
+
+var posicion = mensaje.lastIndexOf('a'); // posicion = 13
+alert("posición de a:" + posicion);
+
+posicion = mensaje.lastIndexOf('b'); // posicion = 12
+alert("posición de b:" + posicion);
+    
+    
+    
+    
+    
+</script></head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemplo autenticacion</title>
+    <script type="text/javascript">
+// Ejemplo autenticacion
+    function comprobarCampos() {
+      //cogemos el campo de texto Nombre
+      var txtnombre =document.getElementById("nombre");
+      var txtclave= document.getElementById("clave");   
+      //El valor escrito en pantalla está en value
+      var texto = txtnombre.value;
+      var clave = txtclave.value;
+      //El div de resultado
+      var divresultado=document.getElementById("resultado");    
+      var HTML="";
+    
+     
+      
+      //Comprobamos si es distinto de cadena Vacia
+      if(texto!=""){
+       alert("el campo nombre está rellenado con " + texto);
+       HTML="<H3> El nombre introducido es :"+texto+"</H3>"
+      } else {
+        alert("el campo nombre está vacio");
+      }
+       if(clave!=""){
+       alert("el campo clave está rellenado con " + clave);
+       HTML=HTML+"<H3> La clave introducida es :"+clave+"</H3>"
+      } else {
+        alert("el campo nombre está vacio");
+      }
+      divresultado.innerHTML=HTML;
+      
+    }
+    
+    
+  </script>
+  </head>
+  <body>
+    <h2>Formulario de autenticación</h2>
+    <form action="paginadelogin.php" method="POST">
+    <p>Introduzca su nombre: <input name="nombre" id="nombre" type="text"> </p>
+    <p>Introduzca su clave: <input name="clave" id="clave" type="password"> </p>
+    <p><input value="Comprobar Campos" onclick="comprobarCampos()" type="button">
+      <input value="Buscar"  type="submit"> </p>
+  </form>
+    <br/><div id="resultado"></div>
+  </body>
+</html>

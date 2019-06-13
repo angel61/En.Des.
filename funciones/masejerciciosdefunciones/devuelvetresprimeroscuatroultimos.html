@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+   
+    function devuelvetresprimeroscuatroultimos(cadena) {
+    var resultado="";
+    longitud=cadena.length;
+    if (longitud>=7) {
+        var tresprimeros=cadena.substring(0,3);
+        var cuatroultimos=cadena.subtring(longitud-4,longitud);
+        resultado=tresprimeros+cuatroultimos;
+    } else {
+
+        resultado=cadena;
+    }
+    return resultado;
+    }
+    var cadena=prompt("Dame una cadena: ");
+    var ultimo = devuelveultimocaracter(cadena);
+    
+    
+    document.write("<h3> El ultimo caracter de la cadena " +cadena +" es: "+ultimo +"</H3>")
+    
+ </script>
+   <body>
+  
+</body>
+</html>

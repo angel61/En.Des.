@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ejemplo checkbox contrato con php</title>
+    <script>
+  function capturar()
+    {
+        var resultado= document.getElementById("resultado");
+        var HTML= "";
+ 			   //Acepto el contrato
+        var acepto=document.getElementById("acepto");
+      //No Acepto el contrato
+      
+         var noacepto=document.getElementById("noacepto");
+      //Comprobamos que el checkbox noacepto está checkeado
+     if (acepto.checked) {
+     
+       HTML="Acepto el contrato";
+     }
+     //comprobamos que el checkbox noacepto está checkeado
+     if (noacepto.checked) {
+     
+      HTML="No acepto el contrato";
+     } else if (!acepto.checked) {
+        //hace click en acepto
+     acepto.click();
+     HTML="Acepto el contrato automarcado";
+      
+      }    
+        
+      
+        resultado.innerHTML=HTML;
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Obtener el valor de un check box</h1>
+    <form id="form1" action="checkboxcontrato.php" method="POST"> Nombre:<br>
+      <p><input name="acepto" id="acepto" class="formulario_check" checked="checked"
+
+          type="checkbox"> Acepto el contrato</p>
+      <p><input name="noacepto" id="noacepto" class="formulario_check" type="checkbox">
+        No Acepto el contrato</p>
+    
+    <input value="Que valor hay en los checkbox" onclick="capturar()" type="button">
+    <input value="pasar a PHP" type="submit">
+  </form>
+  <br>
+    <div id="resultado"></div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+  </head>
+  <script type="text/javascript">    
+   
+    function devuelveultimocaracter(cadena) {
+    var resultado="";
+    longitud=cadena.length;
+    // "hola mundo" longitud=10 substring(10-3,10)
+    // así me quedo los tres últimos carácteres
+    resultado=cadena.substring(longitud-1,longitud);
+    return resultado;
+    }
+    var cadena=prompt("Dame una cadena: ");
+    var resultresprimeros = devuelvetresprimeros(cadena);
+    
+    var resultresultimos= devuelvetresultimos(cadena);    
+    alert("tres ultimos caracteres " + resultresultimos);
+    
+ </script>
+  <body>
+  
+  </body>
+</html>

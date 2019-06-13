@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+// Ejemplo tabla de multiplkicar
+var i=1,Num = 0;
+Num = parseInt(prompt("Introduce número:", 0));
+document.write("<table border=1>  <TR style='color:white; background-color:blue'><TH >NÚMERO</TH><TH>RESULTADO</TH> </TR> ");
+while (i<=10) {
+  
+if (i%2==1) {
+				document.write("<tr style='background-color:lightblue'><td>"+Num+"x"+i+"="+"</td>" +
+              "<td>" + i*Num + "</td></tr>");
+} else {
+				document.write("<tr style='background-color:white'><td>"+i+"x"+Num+"="+"</td>" +
+              "<td>" + i*Num + "</td></tr>");
+}
+  
+  
+  i++;
+}
+document.write("</table> " );
+</script></head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>

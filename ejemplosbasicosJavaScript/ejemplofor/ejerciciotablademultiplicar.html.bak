@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <script type="text/javascript">
+//DeclaraciÃ³n de variables
+     
+      
+      //numero de filas por pantalla
+      //document.write  PERMITE ESCRIBIR DENTRO DEL BODY
+      //ES UNA FUNCION DE JAVASCRIPT PENSADA PARA 
+      //ESCRIBIR WEBS DE MANERA DINÁMICA
+    
+      
+      //EJERCICIO TABLA DE MULTIPLICAR, PARA UN NUMERO
+      //ENTRE 0 Y 10 HACER UNA TABLA CON DOS COLUMNAS
+      //EN UNA PONEMOS LA OPERACION CON FORMATO 4x2=
+      //EN LA OTRA EL RESULTADO 8
+      //COGER EL NUMERO POR PANTALLA
+     
+      
+      var numero = prompt ("Dame un numero"); // cogemos un 4
+     //OBTENER LOS RESULTADOS DE LAS MULTIPLICACIONES
+      var resultado=1;
+      // Multiplicacion     Resultado
+      // 5x4 =                   20
+      document.write(" <Table border='1'> <TR> <TH> Multiplicacion </TH> " +
+                     "<TH> Resultado </TH> </TR> " );
+      for (var i=1; i<= 10 ; i++) {
+        	resultado= i*numero;
+      	  alert( "El resultado de multiplicar " + i 
+              + " y " + numero + " es " +resultado); 
+        document.write("<TR> <TD> " + i + "x" + numero +"=" + " </TD> " +
+                       "<TD> " + resultado + "</TD> </TR>");
+      }
+      
+      document.write("</TABLE>");
+      
+      
+      
+  </script>
+  </head>
+  <body>
+    <p><br>
+    </p>
+  </body>
+</html>
